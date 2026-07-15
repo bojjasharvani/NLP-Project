@@ -1,7 +1,7 @@
 import gradio as gr
 from google import genai
 
-client = genai.Client(api_key="os.environ["GEMINI_API_KEY"]")
+client = genai.Client(api_key="GEMINI_API_KEY")
 
 def generate_recipe(recipe_name):
     prompt = f"""
